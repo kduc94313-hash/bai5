@@ -1,0 +1,17 @@
+print("245752021610021:", mssv)
+print("Dau Van Khanh Duc:", hoten)
+print()
+n = int(input("Nhập số lượng phần tử của danh sách: "))
+
+dlist = []
+for i in range(n):
+    val = int(input(f"Nhập phần tử thứ {i+1}: "))
+    dlist.append(val)
+item = int(input("Nhập giá trị cần tìm: "))
+found, pos = search_module.Sequential_Search(dlist, item)
+print("\nDanh sách đã nhập:", dlist)
+
+if found:
+    print(f"Kết quả: (True, {pos})")
+else:
+    print("(False, -1)")
