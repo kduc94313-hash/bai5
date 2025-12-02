@@ -1,0 +1,13 @@
+print("245752021610021:", mssv)
+print("Dau Van Khanh Duc:", hoten)
+print()
+n = int(input("Nhập số lượng phần tử của danh sách: "))
+lst = []
+for i in range(n):
+    val = int(input(f"Nhập phần tử thứ {i+1}: "))
+    lst.append(val)
+lst.sort()
+value = int(input("Nhập giá trị cần tìm: "))
+found = search_module.binary_search(lst, value)
+print("\nDanh sách đã sắp xếp:", lst)
+print(f"Kết quả tìm kiếm {value}: {found}")
