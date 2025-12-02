@@ -1,0 +1,21 @@
+print("245752021610021:", mssv)
+print("Dau Van Khanh Duc:", hoten)
+print()
+n = int(input("Nhập số lượng phần tử: "))
+
+lst = []
+for i in range(n):
+    value = float(input(f"Nhập phần tử thứ {i+1}: "))
+    lst.append(value)
+sorted_list = mylist.sort_list(lst)
+max_val = mylist.max_element(lst)
+min_val = sorted_list[0]
+max_index = lst.index(max_val)
+min_index = lst.index(min_val)
+print("\nDanh sách đã nhập:", lst)
+print("Danh sách sau khi sắp xếp:", sorted_list)
+print("Phần tử nhỏ nhất:", min_val)
+print("Vị trí phần tử nhỏ nhất:", min_index)
+
+print("Phần tử lớn nhất:", max_val)
+print("Vị trí phần tử lớn nhất:", max_index)
